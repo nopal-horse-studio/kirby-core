@@ -1,0 +1,13 @@
+title: Home
+icon: home
+files: true
+pages: false
+fields:
+
+  title:
+    label: Título
+    type: text
+
+  text:
+    label: Texto descriptivo
+    type: markdown

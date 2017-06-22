@@ -12,3 +12,6 @@ Kirby Starterkit 2.4.0
 * Apache 2 with URL rewriting (mod_rewrite) or nginx
 * PHP 5.4+
 * PHP mbstring extension for proper UTF-8 support
+
+### Kirby Configuration
+c::set('debug', true);

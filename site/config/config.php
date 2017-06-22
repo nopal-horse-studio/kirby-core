@@ -12,3 +12,4 @@ c::set('license', 'put your license key here');
 Kirby Configuration
 ---------------------------------------
 */
+c::set('debug', true);
