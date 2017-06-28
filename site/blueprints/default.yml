@@ -1,12 +1,33 @@
 title: Page
-icon: file
+icon: folder
 files: true
-pages: true
+pages: false
 fields:
+  tab1:
+    label: Contenido
+    type: tabs
+
   title:
-    label: Title
-    type:  text
+    label: Título
+    type: text
 
   text:
-    label: Text
-    type:  textarea
+    label: Texto descriptivo
+    type: markdown
+
+  tab2:
+    label: Social Media & SEO
+    type: tabs
+
+  socialimage:
+    label: Imagen Compartible
+    type: image
+    help: Esta es la imagen que aparece cuando compartes en Redes Sociales y Buscadores
+
+  description:
+    label: Descripción de Redes Sociales y SEO
+    type: textarea
+    help: Esto es lo que aparece cuando compartes en Redes Sociales y Buscadores
+    validate:
+      minLength: 10
+      maxLength: 200

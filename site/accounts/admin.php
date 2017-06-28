@@ -7,4 +7,5 @@ email: jorge.fco.mend@gmail.com
 language: es_419
 role: admin
 history:
+  - error
   - home

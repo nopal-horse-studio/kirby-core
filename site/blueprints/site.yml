@@ -1,7 +1,5 @@
 title: Site
-
 pages: default
-
 fields:
   title:
     label: Title
@@ -12,9 +10,10 @@ fields:
     type:  text
 
   description:
-    label: Description
+    label: Description website
     type:  textarea
-    
-  copyright:
-    label: Copyright
-    type:  textarea
+
+  keywords:
+    label: Keys website
+    type:  tags
+    icon: keyboard-o

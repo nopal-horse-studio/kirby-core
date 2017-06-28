@@ -9,4 +9,4 @@ fields:
 
   text:
     label: Text
-    type:  markdonw
+    type:  markdown

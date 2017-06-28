@@ -3,6 +3,9 @@ icon: home
 files: true
 pages: false
 fields:
+  tab1:
+    label: Contenido
+    type: tabs
 
   title:
     label: Título
@@ -11,3 +14,20 @@ fields:
   text:
     label: Texto descriptivo
     type: markdown
+
+  tab2:
+    label: Social Media & SEO
+    type: tabs
+
+  socialimage:
+    label: Imagen Compartible
+    type: image
+    help: Esta es la imagen que aparece cuando compartes en Redes Sociales y Buscadores
+
+  description:
+    label: Descripción de Redes Sociales y SEO
+    type: textarea
+    help: Esto es lo que aparece cuando compartes en Redes Sociales y Buscadores
+    validate:
+      minLength: 10
+      maxLength: 200
