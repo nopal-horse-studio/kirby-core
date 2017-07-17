@@ -2,12 +2,32 @@ Title: Kirby Core
 
 ----
 
-Author: NopalHorseStudio
+Author: 
 
 ----
 
-Description: Easy to setup. Easy to use. Flexible as hell.
+Seodescription: Kirby core cms
 
 ----
 
-Keywords: cms,kirby,dev,php
+Seokeywords: cms,dev,php,kirby,core
+
+----
+
+Versioncss: 1.1
+
+----
+
+Versionplugins: 1.1
+
+----
+
+Versionmain: 1.1
+
+----
+
+Seoimage: social-media.jpg
+
+----
+
+Idgoogle: UA-85711571-1

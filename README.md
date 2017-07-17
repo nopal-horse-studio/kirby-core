@@ -15,3 +15,10 @@ Kirby Starterkit 2.4.0
 
 ### Kirby Configuration
 c::set('debug', true);
+
+# Features
+* Error 404
+* Favicons
+* SEO & Social Media
+* Google Analytics
+* Versions CSS & JS (Deploy's)

@@ -8,12 +8,43 @@ fields:
   author:
     label: Author
     type:  text
+    icon: user
+    width: 1/2
 
-  description:
+  seoimage:
+    label: Share image
+    type:  image
+    width: 1/2
+
+  seodescription:
     label: Description website
     type:  textarea
 
-  keywords:
+  seokeywords:
     label: Keys website
     type:  tags
     icon: keyboard-o
+
+  versioncss:
+    label: version CSS
+    type:  text
+    width: 1/2
+    icon: css3
+
+  versionplugins:
+    label: version plugins
+    type:  text
+    width: 1/2
+    icon: file-archive-o
+
+  versionmain:
+    label: version JS
+    type:  text
+    width: 1/2
+    icon: file-archive-o
+
+  idgoogle:
+    label: ID Google Analytics
+    type:  text
+    width: 1/2
+    icon: file-archive-o
