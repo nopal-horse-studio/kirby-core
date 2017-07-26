@@ -8,4 +8,6 @@ language: es_419
 role: admin
 history:
   - error
+  - terms
+  - notice
   - home

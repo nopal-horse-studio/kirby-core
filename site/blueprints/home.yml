@@ -1,33 +1,100 @@
 title: Home
 icon: home
-files: true
+files: false
 pages: false
 fields:
   tab1:
     label: Contenido
     type: tabs
+    icon: cog
 
   title:
-    label: Título
-    type: text
+    label: Title
+    type:  text
 
   text:
-    label: Texto descriptivo
-    type: markdown
+    label: Text
+    type:  markdown
+
+  phone:
+    label: Teléfono
+    type: text
+    icon: phone
+    width: 1/2
+
+  email:
+    label: Email
+    type: text
+    icon: envelope
+    width: 1/2
+
+  street:
+    label: Calle
+    type: text
+    icon: street-view
+    width: 1/2
+
+  colonia:
+    label: Colonia
+    type: text
+    icon: building
+    width: 1/2
+
+  cp:
+    label: Código Postal
+    type: text
+    icon: address-card
+    width: 1/2
+
+  city:
+    label: Ciudad
+    type: text
+    icon: map-signs
+    width: 1/2
+
+  state:
+    label: Estado
+    type: text
+    icon: map
+    width: 1/2
+
+  country:
+    label: País
+    type: text
+    icon: globe
+    width: 1/2
 
   tab2:
-    label: Social Media & SEO
+    label: Social Media
     type: tabs
+    icon: hashtag
 
-  socialimage:
-    label: Imagen Compartible
-    type: image
-    help: Esta es la imagen que aparece cuando compartes en Redes Sociales y Buscadores
+  facebook:
+    label: Colonia
+    type: text
+    icon: building
+    width: 1/2
 
-  description:
-    label: Descripción de Redes Sociales y SEO
-    type: textarea
-    help: Esto es lo que aparece cuando compartes en Redes Sociales y Buscadores
-    validate:
-      minLength: 10
-      maxLength: 200
+  cp:
+    label: Código Postal
+    type: text
+    icon: address-card
+    width: 1/2
+
+  city:
+    label: Ciudad
+    type: text
+    icon: map-signs
+    width: 1/2
+
+  state:
+    label: Estado
+    type: text
+    icon: map
+    width: 1/2
+
+  country:
+    label: País
+    type: text
+    icon: globe
+    width: 1/2

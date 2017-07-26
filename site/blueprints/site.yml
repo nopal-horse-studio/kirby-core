@@ -1,6 +1,11 @@
 title: Site
 pages: default
 fields:
+  tab1:
+    label: Social Media & SEO
+    type: tabs
+    icon: pie-chart
+
   title:
     label: Title
     type:  text
@@ -19,11 +24,17 @@ fields:
   seodescription:
     label: Description website
     type:  textarea
+    help: Content description less than 200 characters
 
   seokeywords:
     label: Keys website
     type:  tags
     icon: keyboard-o
+
+  tab2:
+    label: Configure & Release
+    type: tabs
+    icon: puzzle-piece
 
   versioncss:
     label: version CSS
@@ -38,7 +49,7 @@ fields:
     icon: file-archive-o
 
   versionmain:
-    label: version JS
+    label: version javascript
     type:  text
     width: 1/2
     icon: file-archive-o
@@ -47,4 +58,16 @@ fields:
     label: ID Google Analytics
     type:  text
     width: 1/2
-    icon: file-archive-o
+    icon: google
+
+  optdebug:
+    label: Active debug
+    type: toggle
+    text: Yes/No
+    width: 1/2
+
+  optionid:
+    label: Active Google Analytics
+    type: toggle
+    text: Yes/No
+    width: 1/2
