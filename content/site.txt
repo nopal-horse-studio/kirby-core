@@ -2,7 +2,7 @@ Title: Kirby Core
 
 ----
 
-Author: 
+Author: Developer
 
 ----
 
@@ -30,8 +30,12 @@ Seoimage: social-media.jpg
 
 ----
 
-Idgoogle: UA-85711571-1
+Idgoogle: XX-XXXXXXXX-X
 
 ----
 
 Optionid: true
+
+----
+
+Optdebug: true

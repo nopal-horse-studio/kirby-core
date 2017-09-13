@@ -34,40 +34,40 @@ fields:
   tab2:
     label: Configure & Release
     type: tabs
-    icon: puzzle-piece
+    icon: plug
 
   versioncss:
     label: version CSS
     type:  text
-    width: 1/2
+    width: 1/3
     icon: css3
 
   versionplugins:
-    label: version plugins
+    label: version Plugins
     type:  text
-    width: 1/2
-    icon: file-archive-o
+    width: 1/3
+    icon: jsfiddle
 
   versionmain:
-    label: version javascript
+    label: version Javascript
     type:  text
-    width: 1/2
-    icon: file-archive-o
+    width: 1/3
+    icon: jsfiddle
 
   idgoogle:
     label: ID Google Analytics
     type:  text
-    width: 1/2
+    width: 1/3
     icon: google
-
-  optdebug:
-    label: Active debug
-    type: toggle
-    text: Yes/No
-    width: 1/2
 
   optionid:
     label: Active Google Analytics
-    type: toggle
+    type: switch
     text: Yes/No
-    width: 1/2
+    width: 1/3
+
+  optdebug:
+    label: Active debug
+    type: switch
+    text: Yes/No
+    width: 1/3

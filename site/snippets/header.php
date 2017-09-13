@@ -6,7 +6,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<meta name="keywords" content="<?= $site->seokeywords()->html() ?>">
-	<meta name="description" content="<?= $site->seodescription()->html() ?>">
+	<meta name="description" content="<?php echo $site->seodescription()->html() ?>">
+	<meta name="author" content="<?php echo $site->author()->html(); ?>">
+	<link rel="index" href="<?php echo $site->url(); ?>">
 
 	<!--F A C E B O O K-->
 	<meta property="og:url" content="<?= $site->url() ?>">
@@ -24,9 +26,13 @@
 	<meta name="twitter:description" content="<?= $site->title()->html(); ?>">
 	<meta name="twitter:image" content="<?php if ($seothumb = $site->seoimage()->toFile()): echo $seothumb->url(); endif ?>">
 
-	<!--G O O G L E + -->
+	<!--G O O G L E -->
+	<meta itemprop="name" content="<?php echo $site->title()->html(); ?>">
+	<meta itemprop="description" content="<?php echo $site->seodescription()->html() ?>">
+	<meta itemprop="image" content="<?php if ($seothumb = $site->seoimage()->toFile()): echo $seothumb->url(); endif ?>">
 
 	<!--P I N T E R E S T-->
+	<meta name="pinterest" content="nopin" description="<?php echo $site->seodescription()->html() ?>">
 
 	<!-- T I T L E -->
 	<title><?= $site->title()->html() ?> | <?= $page->title()->html() ?></title>
@@ -53,7 +59,7 @@
 	<!-- C S S-->
 	<?= css('assets/css/main.min.css'.'?v='.$site->versioncss()) ?>
 
-	<!--G O O G L E A N A L Y T I C S-->
+	<!--G O O G L E   |   A N A L Y T I C S-->
 	<?php if ($site->optionid()=='true'): ?>
 		<?php snippet('module/google.analytics', array('site' => $site)) ?>
 	<?php endif ?>
