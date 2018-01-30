@@ -1,73 +1,80 @@
 title: Site
 pages: default
+
 fields:
   tab1:
-    label: Social Media & SEO
+    label: Contenido
     type: tabs
-    icon: pie-chart
+    icon: align-left
 
   title:
-    label: Title
+    label: Título
     type:  text
+    placeholder: Mi sitio web
+    help: Nombre de tu dominio o sitio web.
 
   author:
-    label: Author
+    label: Autor
     type:  text
-    icon: user
+    icon: font
     width: 1/2
+    placeholder: Empresa
+    help: Nombre del autor
 
   seoimage:
-    label: Share image
+    label: Share imagen (Rede Sociales)
     type:  image
     width: 1/2
+    help: Imagen que aparece al compartir la URL de tu sitio web
 
   seodescription:
-    label: Description website
+    label: Descripción
     type:  textarea
-    help: Content description less than 200 characters
+    placeholder: ¿Quiénes somos?
+    help: Breve descripción sobre <strong>¿Quiénes somos?</strong> (50–300 characters.)
 
-  seokeywords:
-    label: Keys website
+  seotags:
+    label: keywords
     type:  tags
-    icon: keyboard-o
+    help: Agregar el nombre de cada palabra separado por una <strong>coma (,)</strong>
 
   tab2:
-    label: Configure & Release
+    label: Deploy
     type: tabs
     icon: plug
 
-  versioncss:
-    label: version CSS
+  info:
+    label: Información
+    type: info
+    text: >
+      Estos campos nos permiten actualizar la versión de nuestros archivos mediante valores numéricos de manera en incremento,
+      para que se vean reflejados los cambios cada que se realizan ajustes.
+      Solución para conflictos en la memoria cache de los navegadores.
+      <i class="fa fa-chrome" aria-hidden="true"></i>
+      <i class="fa fa-firefox" aria-hidden="true"></i>
+      <i class="fa fa-internet-explorer" aria-hidden="true"></i>
+      <i class="fa fa-safari" aria-hidden="true"></i>
+
+  css:
+    label: CSS
     type:  text
+    icon: file
     width: 1/3
-    icon: css3
+    placeholder: 0.01
+    help: Numero de versión para el archivo <strong>main.min.css</strong>
 
-  versionplugins:
-    label: version Plugins
+  main:
+    label: MAIN
     type:  text
+    icon: file
     width: 1/3
-    icon: jsfiddle
+    placeholder: 0.01
+    help: Numero de versión para el archivo <strong>main.min.js</strong>
 
-  versionmain:
-    label: version Javascript
+  plugins:
+    label: PLUGINS
     type:  text
+    icon: file
     width: 1/3
-    icon: jsfiddle
-
-  idgoogle:
-    label: ID Google Analytics
-    type:  text
-    width: 1/3
-    icon: google
-
-  optionid:
-    label: Active Google Analytics
-    type: switch
-    text: Yes/No
-    width: 1/3
-
-  optdebug:
-    label: Active debug
-    type: switch
-    text: Yes/No
-    width: 1/3
+    placeholder: 0.01
+    help: Numero de versión para el archivo <strong>plugins.min.js</strong>
