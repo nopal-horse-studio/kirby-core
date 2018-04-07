@@ -6,7 +6,7 @@ Kirby is a file based CMS
 Easy to setup. Easy to use. Flexible as hell.
 
 ### Version update
-Kirby Starterkit 2.8.0
+Kirby Starterkit 2.5.9
 
 ### 🛠 Requirements
 * Apache 2 with URL rewriting (mod_rewrite) or nginx

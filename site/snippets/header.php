@@ -13,6 +13,7 @@
 	<meta name="description" content="<?= $site->seodescription()->html() ?>">
 	<meta name="author" content="<?= $site->author()->html(); ?>">
 	<link rel="index" href="<?= $site->url(); ?>">
+	<link rel="canonical" href="<?= $site->url(); ?>" />
 
 	<!--F A C E B O O K-->
 	<meta property="og:url" content="<?= $site->url() ?>">
