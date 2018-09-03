@@ -1,26 +1,44 @@
-# System files
-# ------------
+# = MAC FILES
+# ----------------------------------------------------------------------
 Icon
 .DS_Store
 
-# Temporary files
-# ---------------
+# =GIT
+# ----------------------------------------------------------------------
+.git
+*.git
+
+# = IMAGES
+# ----------------------------------------------------------------------
 /thumbs/*
 !/thumbs/index.html
 
+# = CACHE
+# ----------------------------------------------------------------------
 /site/cache/*
 !/site/cache/index.html
 
-# -------------SECURITY-------------
-# NEVER publish these files via Git!
-# -------------SECURITY-------------
-
-# Kirby accounts
-# ---------------
+# = ACCOUNTS
+# ----------------------------------------------------------------------
 /site/accounts/*
 !/site/accounts/index.html
 
-# Avatars
-# ---------------
+# = AVATARS
+# ----------------------------------------------------------------------
 /assets/avatars/*
 !/assets/avatars/index.html
+
+# = EDITORS TEXT
+# ----------------------------------------------------------------------
+prepros.cfg
+prepros-6.config
+prepros.cfg
+config.codekit3
+
+# = NPM & BOWER
+# ----------------------------------------------------------------------
+node_modules/*
+bower_components/*
+package.json
+package-lock.json
+gulpfile.js
