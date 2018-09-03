@@ -5,7 +5,7 @@ Kirby is a file based CMS
 
 Easy to setup. Easy to use. Flexible as hell.
 
-[Getkirby downloads](https://getkirby.com/downloads)
+ 📌[Getkirby downloads](https://getkirby.com/downloads)
 
 ### Version update
 Kirby Starterkit 2.5.9
