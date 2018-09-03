@@ -1,9 +1,8 @@
 <!--J A V A S C R I P T-->
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+<?= js('assets/dist/vendors.min.js'.'?v=@'.(rand(10000, 20000)), ['defer' => true]); ?>
 
-<?= js('assets/js/plugins.min.js'.'?v='.$site->plugins()) ?>
-
-<?= js('assets/js/main.min.js'.'?v='.$site->main()) ?>
+<?= js('assets/dist/js/main.min.js'.'?v=@'.(rand(10000, 20000)), ['defer' => true]); ?>
 
 	</body>
 </html>

@@ -62,7 +62,7 @@
 	<meta name="theme-color" content="#ffffff">
 
 	<!-- C S S -->
-	<?= css('assets/css/main.min.css'.'?v='.$site->css()) ?>
+	<?= css('assets/css/main.min.css'.'?v=@'.(rand(10000, 20000))); ?>
 
 	<!--G O O G L E   |   A N A L Y T I C S-->
 	<?php if ($site->optionid()=='true'): ?>
