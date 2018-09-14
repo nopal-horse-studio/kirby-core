@@ -16,16 +16,21 @@ Kirby Starterkit 2.5.9
 * PHP mbstring extension for proper UTF-8 support
 
 ### ⚙️ Kirby Configuration
+Route:
 
+```
 site/config/config.php
+```
 
-```
-c::set('debug', true);
-```
+### 📁 Architecture
+- Home
+- Contact
+- Error
+- Settigns
 
 ### 🔪 Features
 * Error 404
-* Favicons
+* Favicon
 * SEO & Social Media
 * Google Analytics
 * Versions CSS & JS (Deploy's)

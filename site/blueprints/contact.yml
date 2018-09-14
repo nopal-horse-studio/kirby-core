@@ -100,6 +100,20 @@ fields:
     width: 1/2
     help: Enlace de tu perfil
 
+  pinterest:
+    label: Pinterest
+    type:  url
+    icon: pinterest
+    width: 1/2
+    help: Enlace de tu perfil
+
+  behance:
+    label: Behance
+    type:  url
+    icon: behance
+    width: 1/2
+    help: Enlace de tu perfil
+
   twitter:
     label: Twitter
     type:  url
