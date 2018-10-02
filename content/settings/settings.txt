@@ -2,19 +2,19 @@ Title: Configuración
 
 ----
 
-Author: 
+Author: Company
 
 ----
 
-Seoimage: 
+Seoimage: thumb.png
 
 ----
 
-Seodescription: 
+Seodescription: My website description...
 
 ----
 
-Seotags: 
+Seotags: website,company,business
 
 ----
 

@@ -4,14 +4,14 @@
 <!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
 <html class="no-js" lang="<?= site()->language() ? site()->language()->code() : 'en' ?>">
 <head>
-
+	<?php $settings = page('settings'); ?>
 	<!-- M E T A -->
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="keywords" content="<?= $site->seokeywords()->html() ?>">
-	<meta name="description" content="<?= $site->seodescription()->html() ?>">
-	<meta name="author" content="<?= $site->author()->html(); ?>">
+	<meta name="keywords" content="<?= $settings->seotags()->html() ?>">
+	<meta name="description" content="<?= $settings->seodescription()->html() ?>">
+	<meta name="author" content="<?= $settings->author()->html(); ?>">
 	<link rel="index" href="<?= $site->url(); ?>">
 	<link rel="canonical" href="<?= $site->url(); ?>" />
 
@@ -19,8 +19,8 @@
 	<meta property="og:url" content="<?= $site->url() ?>">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="<?= $page->title()->html(); ?> | <?= $site->title()->html(); ?>">
-	<meta property="og:image" content="<?php if ($seothumb = $site->seoimage()->toFile()): echo $seothumb->url(); endif ?>">
-	<meta property="og:description" content="<?= $site->seodescription()->html() ?>">
+	<meta property="og:image" content="<?php if ($seothumb = $settings->seoimage()->toFile()): echo $seothumb->url(); endif ?>">
+	<meta property="og:description" content="<?= $settings->seodescription()->html() ?>">
 	<meta property="og:site_name" content="<?= $site->title()->html(); ?>">
 
 	<!--T W I T T E R-->
@@ -29,20 +29,20 @@
 	<meta name="twitter:url" content="<?= $site->url() ?>">
 	<meta name="twitter:title" content="<?= $page->title()->html(); ?> | <?= $site->title()->html(); ?>">
 	<meta name="twitter:description" content="<?= $site->title()->html(); ?>">
-	<meta name="twitter:image" content="<?php if ($seothumb = $site->seoimage()->toFile()): echo $seothumb->url(); endif ?>">
+	<meta name="twitter:image" content="<?php if ($seothumb = $settings->seoimage()->toFile()): echo $seothumb->url(); endif ?>">
 
 	<!--G O O G L E -->
 	<meta itemprop="name" content="<?= $page->title()->html(); ?> | <?= $site->title()->html(); ?>">
-	<meta itemprop="description" content="<?php echo $site->seodescription()->html() ?>">
-	<meta itemprop="image" content="<?php if ($seothumb = $site->seoimage()->toFile()): echo $seothumb->url(); endif ?>">
+	<meta itemprop="description" content="<?php echo $settings->seodescription()->html() ?>">
+	<meta itemprop="image" content="<?php if ($seothumb = $settings->seoimage()->toFile()): echo $seothumb->url(); endif ?>">
 
 	<!--P I N T E R E S T-->
-	<meta name="pinterest" content="nopin" description="<?= $site->seodescription()->html() ?>">
+	<meta name="pinterest" content="nopin" description="<?= $settings->seodescription()->html() ?>">
 
 	<!-- T I T L E -->
 	<title><?= $site->title()->html() ?> | <?= $page->title()->html() ?></title>
 
-	<!--F A V I C O N S-->
+	<!--A P P - F A V I C O N S-->
 	<link rel="apple-touch-icon" sizes="57x57" href="<?= $site->url(); ?>/assets/favicons/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="<?= $site->url(); ?>/assets/favicons/apple-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="<?= $site->url(); ?>/assets/favicons/apple-icon-72x72.png">
@@ -64,11 +64,10 @@
 	<!-- C S S -->
 	<?= css('assets/css/main.min.css'.'?v=@'.(rand(10000, 20000))); ?>
 
-	<!--G O O G L E   |   A N A L Y T I C S-->
 	<?php if ($site->optionid()=='true'): ?>
-		<?php snippet('module/google.analytics', array('site' => $site)) ?>
+	<!--G O O G L E   |   A N A L Y T I C S-->
+	<?php snippet('module/google.analytics', array('site' => $site)) ?>
 	<?php endif ?>
-
 </head>
 <body>
 

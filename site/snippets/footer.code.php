@@ -3,5 +3,6 @@
 <?= js('assets/dist/vendors.min.js'.'?v=@'.(rand(10000, 20000)), ['defer' => true]); ?>
 
 <?= js('assets/dist/js/main.min.js'.'?v=@'.(rand(10000, 20000)), ['defer' => true]); ?>
-	</body>
+
+</body>
 </html>
