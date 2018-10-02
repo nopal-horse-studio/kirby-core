@@ -34,3 +34,10 @@ site/config/config.php
 * SEO & Social Media
 * Google Analytics
 * Versions CSS & JS (Deploy's)
+* Minify HTML
+
+### 📋 Fields
+- Gallery
+- Tabs
+- Markdown
+- [MinifyHTML](https://github.com/ian-cox/Kirby-MinifyHTML)
