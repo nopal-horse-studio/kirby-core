@@ -2,35 +2,35 @@ Title: Contacto
 
 ----
 
-Street: 
+Street: Street #123
 
 ----
 
-Cp: 
+Cp: 44445
 
 ----
 
-Colony: 
+Colony: Colony
 
 ----
 
-City: 
+City: City
 
 ----
 
-State: 
+State: State
 
 ----
 
-Country: 
+Country: México
 
 ----
 
-Email: 
+Email: correo@ejemplo.com
 
 ----
 
-Phone: 
+Phone: (33) 5678-1234
 
 ----
 
@@ -43,3 +43,23 @@ Twitter:
 ----
 
 Instagram: 
+
+----
+
+Telephone: (33) 1234-5678
+
+----
+
+Whatsapp: (33) 0000-1111
+
+----
+
+Pinterest: 
+
+----
+
+Behance: 
+
+----
+
+Usertwitter: 
