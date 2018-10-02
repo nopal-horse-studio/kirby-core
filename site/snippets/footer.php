@@ -1,4 +1,5 @@
 <?php $contact = page('contact'); ?>
+
 <footer>
 	<div>
 		<p>
