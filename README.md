@@ -40,4 +40,6 @@ site/config/config.php
 - Gallery
 - Tabs
 - Markdown
+
+### Plugins
 - [MinifyHTML](https://github.com/ian-cox/Kirby-MinifyHTML)
