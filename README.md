@@ -41,5 +41,5 @@ site/config/config.php
 - Tabs
 - Markdown
 
-### Plugins
+### 💊 Plugins
 - [MinifyHTML](https://github.com/ian-cox/Kirby-MinifyHTML)
