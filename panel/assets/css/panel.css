@@ -22,7 +22,7 @@
   -webkit-box-shadow: 0 1px 15px rgba(27, 31, 35, 0.15);
   box-shadow: 0 1px 15px rgba(27, 31, 35, 0.15); }
 
-.background, .hgroup a:after {
+.background, #nprogress .bar, .hgroup a:after {
   background-image: -webkit-gradient(linear, left top, right top, from(#0366d6), to(#6f42c1));
   background-image: -webkit-linear-gradient(left, #0366d6 0%, #6f42c1 100%);
   background-image: -o-linear-gradient(left, #0366d6 0%, #6f42c1 100%);
@@ -254,7 +254,6 @@ body.rtl .shiv-grey:after {
   pointer-events: none; }
 
 #nprogress .bar {
-  background: #fff;
   position: fixed;
   z-index: 1031;
   top: 0;
@@ -1151,10 +1150,10 @@ body:not(.login) #form-field-username {
   cursor: pointer; }
 
 .message-is-notice .message-content {
-  background: #8dae28; }
+  background: #28a745; }
 
 .message-is-alert .message-content {
-  background: #b3000a; }
+  background: #d73a49; }
 
 .message-is-alert a {
   color: #fff;
@@ -1237,16 +1236,16 @@ body > .message .message-content:after {
   border-bottom: .5em solid transparent; }
   body.ltr body > .message .message-content:after {
     right: -.5em;
-    border-left: .5em solid #8dae28; }
+    border-left: 0.5em solid #28a745; }
   body.rtl body > .message .message-content:after {
     left: -.5em;
-    border-right: .5em solid #8dae28; }
+    border-right: 0.5em solid #28a745; }
 
 body.ltr body > .message-is-alert .message-content:after {
-  border-left: .5em solid #b3000a; }
+  border-left: 0.5em solid #d73a49; }
 
 body.rtl body > .message-is-alert .message-content:after {
-  border-right: .5em solid #b3000a; }
+  border-right: 0.5em solid #d73a49; }
 
 .modal-content .message {
   margin: -1.5em -1.5em 1.5em; }
@@ -1299,16 +1298,16 @@ body.rtl body > .message-is-alert .message-content:after {
   border-bottom: 5px solid transparent; }
   body.ltr .topbar .message-content:after {
     right: -7px;
-    border-left: 7px solid #8dae28; }
+    border-left: 7px solid #28a745; }
   body.rtl .topbar .message-content:after {
     left: -7px;
-    border-right: 7px solid #8dae28; }
+    border-right: 7px solid #28a745; }
 
 body.ltr .topbar .message-is-alert .message-content:after {
-  border-left: 7px solid #b3000a; }
+  border-left: 7px solid #d73a49; }
 
 body.rtl .topbar .message-is-alert .message-content:after {
-  border-right: 7px solid #b3000a; }
+  border-right: 7px solid #d73a49; }
 
 body.ltr .topbar .message-toggle {
   right: 1.25em; }
@@ -1591,7 +1590,7 @@ body.rtl .dropdown-right:after {
   color: #777; }
 
 .dropdown-list > li > a:hover i {
-  color: #000; }
+  color: #A1ACB7; }
 
 .dropdown-list > li i {
   display: inline-block;

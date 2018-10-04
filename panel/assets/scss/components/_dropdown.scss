@@ -66,8 +66,9 @@
   color: #777;
 }
 .dropdown-list > li > a:hover i {
-  color: #000;
+  color: $color-icons;
 }
+
 .dropdown-list > li i {
   display: inline-block;
   width: 2em;

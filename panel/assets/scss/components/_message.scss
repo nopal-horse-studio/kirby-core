@@ -5,15 +5,18 @@
   cursor: pointer;
 }
 .message-is-notice .message-content {
-  background: #8dae28;
+  background: $color-success;
 }
+
 .message-is-alert .message-content {
-  background: #b3000a;
+  background: $color-error;
 }
+
 .message-is-alert a {
   color: #fff;
   border-bottom: 2px solid rgba(255,255,255,.5);
 }
+
 .message-content {
   display: block;
   line-height: 1.5em;
@@ -25,6 +28,7 @@
     padding: .75em 1.5em .75em 4.5em;
   }
 }
+
 .message-toggle {
   position: absolute;
   top: 50%;
@@ -42,9 +46,11 @@
     left: 1.5em;
   }
 }
+
 .message-toggle:hover {
   border-color: #fff;
 }
+
 .message-toggle i {
   position: absolute;
   top: 50%;
@@ -57,6 +63,7 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
 .message-is-notice .message-toggle {
   color: #fff;
 }
@@ -98,19 +105,19 @@ body > .message .message-content:after {
   border-bottom: .5em solid transparent;
   body.ltr & {
     right: -.5em;
-    border-left: .5em solid #8dae28;
+    border-left: .5em solid $color-success;
   }
   body.rtl & {
     left: -.5em;
-    border-right: .5em solid #8dae28;
+    border-right: .5em solid $color-success;
   }
 }
 body > .message-is-alert .message-content:after {
   body.ltr & {
-    border-left: .5em solid #b3000a;
+    border-left: .5em solid $color-error;
   }
   body.rtl & {
-    border-right: .5em solid #b3000a;
+    border-right: .5em solid $color-error;
   }
 }
 
@@ -158,19 +165,19 @@ body > .message-is-alert .message-content:after {
   border-bottom: 5px solid transparent;
   body.ltr & {
     right: -7px;
-    border-left: 7px solid #8dae28;
+    border-left: 7px solid $color-success;
   }
   body.rtl & {
     left: -7px;
-    border-right: 7px solid #8dae28;
+    border-right: 7px solid $color-success;
   }
 }
 .topbar .message-is-alert .message-content:after {
   body.ltr & {
-    border-left: 7px solid #b3000a;
+    border-left: 7px solid $color-error;
   }
   body.rtl & {
-    border-right: 7px solid #b3000a;
+    border-right: 7px solid $color-error;
   }
 }
 .topbar .message-toggle {
