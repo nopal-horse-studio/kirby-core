@@ -1,27 +1,31 @@
 /**
- * Visual Markdown Editor Field for Kirby 2
- *
- * @version   1.5.0
- * @author    Jonas Döbertin <hello@jd-powered.net>
- * @copyright Jonas Döbertin <hello@jd-powered.net>
- * @link      https://github.com/JonasDoebertin/kirby-visual-markdown
- * @license   GNU GPL v3.0 <http://opensource.org/licenses/GPL-3.0>
- */
+	* Visual Markdown Editor Field for Kirby 2
+	*
+	* @version   1.5.0
+	* @author    Jonas Döbertin <hello@jd-powered.net>
+	* @copyright Jonas Döbertin <hello@jd-powered.net>
+	* @link      https://github.com/JonasDoebertin/kirby-visual-markdown
+	* @license   GNU GPL v3.0 <http://opensource.org/licenses/GPL-3.0>
+*/
 
+:root{
+	--color-primary: 	 #0366d6;
+	--color-error: 		#d73a49;
+	--color-success: 	#28a745;
+	--color-elements:	#24292e;
 
-/**
- * WRAPPER
- */
+}
+
 .markdownfield-wrapper {
     border: 2px solid #ddd;
 }
 
     .field-with-error .markdownfield-wrapper {
-        border-color: #b3000a;
+        border-color: var(--color-error);
     }
 
     .markdownfield-wrapper.markdownfield-wrapper-focused {
-        border-color: #8dae28;
+        border-color: var(--color-primary);
     }
 
     .markdownfield-wrapper.markdownfield-wrapper-over {
@@ -43,7 +47,7 @@
 }
 
     .cm-s-visualmarkdown div.CodeMirror-cursor {
-        border-left: 2px solid #8dae28;
+        border-left: 2px solid var(--color-success);
     }
 
     .cm-s-visualmarkdown .CodeMirror-scroll {
@@ -77,7 +81,7 @@
     .cm-s-visualmarkdown .cm-tag,
     .cm-s-visualmarkdown .cm-attribute,
     .cm-s-visualmarkdown .cm-string {
-        color: #8dae28;
+        color: var(--color-success);
     }
 
     /* Markdown Link Captions */
@@ -151,7 +155,7 @@
         }
 
         .cm-s-visualmarkdown .cm-formatting-task.cm-property {
-            color: #8dae28;
+            color: var(--color-success);
         }
 
         /**
@@ -170,13 +174,13 @@
  * TOOLBAR THEME
  */
 .markdownfield-wrapper .visualmarkdown-toolbar {
-	background: #ffffff;
+	background: var(--color-elements);
 	border-bottom: 1px solid #efefef;
 	display: block;
 	width: 100%;
-    margin: 0;
-    padding: 0;
-    position: relative;
+	margin: 0;
+	padding: 0;
+	position: relative;
 }
 
 .markdownfield-wrapper .visualmarkdown-toolbar-fixed {
