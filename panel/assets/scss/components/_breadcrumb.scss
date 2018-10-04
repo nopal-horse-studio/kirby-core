@@ -1,12 +1,14 @@
 .breadcrumb {
-  position: relative;
-  background: #000;
+	position: relative;
+	background: $color-elements;
 }
+
 .breadcrumb-list {
   height: 3em;
   overflow: hidden;
   display: none;
 }
+
 .breadcrumb-list:after {
   position: absolute;
   top: 0;
@@ -30,9 +32,11 @@
     background: linear-gradient(right, rgba(0,0,0,0), #000);
   }
 }
+
 .breadcrumb-list li:last-child .breadcrumb-label {
   max-width: none;
 }
+
 .breadcrumb-link {
   position: relative;
   line-height: 1em;
@@ -84,27 +88,22 @@
 }
 
 .breadcrumb-label:after {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  content: "";
-  width: .75em;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	content: "";
+	width: .75em;
 
-  body.ltr & {
-    right: 0;
-    background: -webkit-linear-gradient(left, rgba(0,0,0,0), #000);
-    background: -moz-linear-gradient(left, rgba(0,0,0,0), #000);
-    background: -ms-linear-gradient(left, rgba(0,0,0,0), #000);
-    background: linear-gradient(left, rgba(0,0,0,0), #000);
-  }
-  body.rtl & {
-    left: 0;
-    background: -webkit-linear-gradient(right, rgba(0,0,0,0), #000);
-    background: -moz-linear-gradient(right, rgba(0,0,0,0), #000);
-    background: -ms-linear-gradient(right, rgba(0,0,0,0), #000);
-    background: linear-gradient(right, rgba(0,0,0,0), #000);
-  }
+	body.ltr & {
+		right: 0;
+		background: $color-elements;
+	}
+	body.rtl & {
+		left: 0;
+		background: $color-elements;
+	}
 }
+
 .breadcrumb-link:hover {
   color: #999;
 }

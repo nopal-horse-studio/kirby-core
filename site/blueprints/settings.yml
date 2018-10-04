@@ -6,6 +6,7 @@ fields:
   tab1:
     label: Configuración
     type: tabs
+    icon: align-left
 
   title:
     label: Título
@@ -54,7 +55,7 @@ fields:
       <i class="fa fa-safari" aria-hidden="true"></i>
 
   favicon:
-    label: FAVICON
+    label: Favicon
     type:  text
     icon: file
     width: 1/2
