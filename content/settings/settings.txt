@@ -19,3 +19,15 @@ Seotags: website,company,business
 ----
 
 Idgoogle: 
+
+----
+
+Favicon: 0.01
+
+----
+
+Config: 
+
+----
+
+Icon: 

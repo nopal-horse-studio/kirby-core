@@ -42,24 +42,33 @@
 	<!-- T I T L E -->
 	<title><?= $site->title()->html() ?> | <?= $page->title()->html() ?></title>
 
+	<?php if ($favicon = page('settings')->icon()->toFile()): ?>
+
+	<!--F A V I C O N S-->
+	<link rel="shortcut icon" href="<?= $favicon->url(); ?>?v=@<?= $settings->favicon(); ?>" type="image/x-icon">
+	<link rel="icon" href="<?= $favicon->url(); ?>?v=@<?= $settings->favicon(); ?>" type="image/x-icon">
+	<?php else: ?>
+
 	<!--A P P - F A V I C O N S-->
-	<link rel="apple-touch-icon" sizes="57x57" href="<?= $site->url(); ?>/assets/favicons/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="<?= $site->url(); ?>/assets/favicons/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="<?= $site->url(); ?>/assets/favicons/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="<?= $site->url(); ?>/assets/favicons/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="<?= $site->url(); ?>/assets/favicons/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="<?= $site->url(); ?>/assets/favicons/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="<?= $site->url(); ?>/assets/favicons/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="<?= $site->url(); ?>/assets/favicons/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="<?= $site->url(); ?>/assets/favicons/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="<?= $site->url(); ?>/assets/favicons/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="<?= $site->url(); ?>/assets/favicons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="<?= $site->url(); ?>/assets/favicons/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="<?= $site->url(); ?>/assets/favicons/favicon-16x16.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="<?= $site->url(); ?>/assets/favicons/apple-icon-57x57.png?v=@<?= $settings->favicon(); ?>">
+	<link rel="apple-touch-icon" sizes="60x60" href="<?= $site->url(); ?>/assets/favicons/apple-icon-60x60.png?v=@<?= $settings->favicon(); ?>">
+	<link rel="apple-touch-icon" sizes="72x72" href="<?= $site->url(); ?>/assets/favicons/apple-icon-72x72.png?v=@<?= $settings->favicon(); ?>">
+	<link rel="apple-touch-icon" sizes="76x76" href="<?= $site->url(); ?>/assets/favicons/apple-icon-76x76.png?v=@<?= $settings->favicon(); ?>">
+	<link rel="apple-touch-icon" sizes="114x114" href="<?= $site->url(); ?>/assets/favicons/apple-icon-114x114.png?v=@<?= $settings->favicon(); ?>">
+	<link rel="apple-touch-icon" sizes="120x120" href="<?= $site->url(); ?>/assets/favicons/apple-icon-120x120.png?v=@<?= $settings->favicon(); ?>">
+	<link rel="apple-touch-icon" sizes="144x144" href="<?= $site->url(); ?>/assets/favicons/apple-icon-144x144.png?v=@<?= $settings->favicon(); ?>">
+	<link rel="apple-touch-icon" sizes="152x152" href="<?= $site->url(); ?>/assets/favicons/apple-icon-152x152.png?v=@<?= $settings->favicon(); ?>">
+	<link rel="apple-touch-icon" sizes="180x180" href="<?= $site->url(); ?>/assets/favicons/apple-icon-180x180.png?v=@<?= $settings->favicon(); ?>">
+	<link rel="icon" type="image/png" sizes="192x192"  href="<?= $site->url(); ?>/assets/favicons/android-icon-192x192.png?v=@<?= $settings->favicon(); ?>">
+	<link rel="icon" type="image/png" sizes="32x32" href="<?= $site->url(); ?>/assets/favicons/favicon-32x32.png?v=@<?= $settings->favicon(); ?>">
+	<link rel="icon" type="image/png" sizes="96x96" href="<?= $site->url(); ?>/assets/favicons/favicon-96x96.png?v=@<?= $settings->favicon(); ?>">
+	<link rel="icon" type="image/png" sizes="16x16" href="<?= $site->url(); ?>/assets/favicons/favicon-16x16.png?v=@<?= $settings->favicon(); ?>">
 	<link rel="manifest" href="/manifest.json">
 	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png?v=@<?= $settings->favicon(); ?>">
 	<meta name="theme-color" content="#ffffff">
+
+	<?php endif ?>
 
 	<!-- C S S -->
 	<?= css('assets/css/main.min.css'.'?v=@'.(rand(10000, 20000))); ?>
