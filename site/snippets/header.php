@@ -71,12 +71,7 @@
 	<?php endif ?>
 
 	<!-- C S S -->
-	<?= css('assets/css/main.min.css'.'?v=@'.(rand(10000, 20000))); ?>
-
-	<?php if ($site->optionid()=='true'): ?>
-	<!--G O O G L E   |   A N A L Y T I C S-->
-	<?php snippet('module/google.analytics', array('site' => $site)) ?>
-	<?php endif ?>
+	<?= css('assets/dist/app.min.css'.'?v=@'.(rand(10000, 20000))); ?>
 </head>
 <body>
 
