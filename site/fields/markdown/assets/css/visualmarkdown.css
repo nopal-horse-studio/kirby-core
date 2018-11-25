@@ -9,11 +9,10 @@
 */
 
 :root{
-	--color-primary: 	 #0366d6;
-	--color-error: 		#d73a49;
+	--color-primary: 	 #5661b3;
+	--color-error: 		#ee2455;
 	--color-success: 	#28a745;
 	--color-elements:	#24292e;
-
 }
 
 .markdownfield-wrapper {
@@ -47,7 +46,7 @@
 }
 
     .cm-s-visualmarkdown div.CodeMirror-cursor {
-        border-left: 2px solid var(--color-success);
+        border-left: 2px solid var(--color-primary);
     }
 
     .cm-s-visualmarkdown .CodeMirror-scroll {

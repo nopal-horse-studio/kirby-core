@@ -16,7 +16,6 @@ fields:
     label: Autor
     type:  text
     icon: font
-    width: 1/3
     placeholder: Empresa
     help: Nombre del autor
 
@@ -24,12 +23,10 @@ fields:
     label: Favicon (.ico)
     type:  image
     icon: file
-    width: 1/3
 
   seoimage:
     label: Share imagen (Rede Sociales)
     type:  image
-    width: 1/3
     help: Imagen que aparece al compartir la URL de tu sitio web
 
   seodescription:
@@ -64,7 +61,6 @@ fields:
     label: Favicon
     type:  text
     icon: file
-    width: 1/3
     placeholder: 0.01
     help: Numero de versión para el <strong>favicon</strong>
 
@@ -72,9 +68,9 @@ fields:
     label: Configuration
     type:  text
     icon: file
-    width: 1/3
     placeholder: 0.01
     help: Numero de versión para el archivo <strong>config.min.js</strong>
+
   idgoogle:
     label: ID Google
     type:  text
